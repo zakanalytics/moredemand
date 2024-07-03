@@ -33,12 +33,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM {{i}}
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
 {% if not loop.last %} union all {% endif %}
 {% endfor %}

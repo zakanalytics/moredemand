@@ -23,12 +23,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_108
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -46,12 +47,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_66
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -69,12 +71,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_38
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -92,12 +95,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_110
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -115,12 +119,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_53
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -138,12 +143,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_73
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -161,12 +167,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_45
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -184,12 +191,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_78
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -207,12 +215,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_40
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -230,12 +239,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_83
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -253,12 +263,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_115
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -276,12 +287,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_95
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -299,12 +311,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_109
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -322,12 +335,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_93
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -345,12 +359,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_85
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -368,12 +383,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_39
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -391,12 +407,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_104
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -414,12 +431,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_47
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -437,12 +455,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_58
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -460,12 +479,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_98
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -483,12 +503,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_68
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -506,12 +527,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_41
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -529,12 +551,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_71
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -552,12 +575,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_54
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -575,12 +599,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_56
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -598,12 +623,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_74
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -621,12 +647,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_63
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -644,12 +671,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_89
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -667,12 +695,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_99
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -690,12 +719,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_48
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -713,12 +743,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_112
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -736,12 +767,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_103
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -759,12 +791,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_44
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -782,12 +815,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_106
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -805,12 +839,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_79
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -828,12 +863,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_84
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -851,12 +887,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_60
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -874,12 +911,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_36
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -897,12 +935,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_91
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -920,12 +959,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_70
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -943,12 +983,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_67
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -966,12 +1007,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_59
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -989,12 +1031,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_61
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1012,12 +1055,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_101
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1035,12 +1079,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_107
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1058,12 +1103,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_46
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1081,12 +1127,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_50
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1104,12 +1151,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_37
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1127,12 +1175,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_72
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1150,12 +1199,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_52
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1173,12 +1223,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_86
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1196,12 +1247,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_65
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1219,12 +1271,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_69
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1242,12 +1295,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_92
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1265,12 +1319,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_51
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1288,12 +1343,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_90
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1311,12 +1367,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_62
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1334,12 +1391,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_100
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1357,12 +1415,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_102
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1380,12 +1439,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_64
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1403,12 +1463,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_49
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1426,12 +1487,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_75
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1449,12 +1511,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_111
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1472,12 +1535,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_113
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1495,12 +1559,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_96
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1518,12 +1583,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_57
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1541,12 +1607,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_55
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1564,12 +1631,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_105
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1587,12 +1655,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_81
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1610,12 +1679,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_80
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1633,12 +1703,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_42
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1656,12 +1727,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_114
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1679,12 +1751,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_94
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1702,12 +1775,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_77
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1725,12 +1799,13 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_82
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
  union all 
 
@@ -1748,11 +1823,12 @@ SELECT
     utm_medium,
     utm_device,
     sale_date,
+    utm_term,
     TRIM(LOWER(sale_status)) AS sale_status,
     TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
     SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
 FROM data-analysis-415012.non_pii.campaign_76
 where buyer_id != 'buyer_id'
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
 

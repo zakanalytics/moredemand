@@ -2085,3 +2085,2144 @@ ON
 [0m06:58:27.422368 [debug] [MainThread]: Command `dbt run` succeeded at 06:58:27.421368 after 42.91 seconds
 [0m06:58:27.422368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225195D2600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002251DE47A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002251DE46930>]}
 [0m06:58:27.423369 [debug] [MainThread]: Flushing usage events
+[0m10:48:16.173491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157A8CC9EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157A8B46720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157A8B44EC0>]}
+
+
+============================== 10:48:16.209314 | 108a728a-2239-42e2-9d80-bb293fe5a21e ==============================
+[0m10:48:16.209314 [info ] [MainThread]: Running with dbt=1.8.3
+[0m10:48:16.209314 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\FidelNdai\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\FidelNdai\\Documents\\GitHub\\moredemand\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m10:48:18.341946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '108a728a-2239-42e2-9d80-bb293fe5a21e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157AC3CF2C0>]}
+[0m10:48:18.435843 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '108a728a-2239-42e2-9d80-bb293fe5a21e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157AB649B50>]}
+[0m10:48:18.435843 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m10:48:18.451445 [debug] [MainThread]: checksum: 30bd4080c2bc8dee5936f8f60083ffbe1c906859d0fd965607c2144031479456, vars: {}, profile: , target: , version: 1.8.3
+[0m10:48:18.808496 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:48:18.808496 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:48:18.870994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '108a728a-2239-42e2-9d80-bb293fe5a21e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157AB64AE70>]}
+[0m10:48:19.074953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '108a728a-2239-42e2-9d80-bb293fe5a21e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157ADA108C0>]}
+[0m10:48:19.074953 [info ] [MainThread]: Found 8 models, 3 sources, 472 macros
+[0m10:48:19.074953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '108a728a-2239-42e2-9d80-bb293fe5a21e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157AD7D9BB0>]}
+[0m10:48:19.090567 [info ] [MainThread]: 
+[0m10:48:19.090567 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m10:48:19.105361 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_data-analysis-415012'
+[0m10:48:19.105361 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:48:20.825471 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_data-analysis-415012_dbt_zak'
+[0m10:48:20.825471 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:48:22.316537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '108a728a-2239-42e2-9d80-bb293fe5a21e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157AD933BF0>]}
+[0m10:48:22.317549 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:48:22.317549 [info ] [MainThread]: 
+[0m10:48:22.349360 [debug] [Thread-1 (]: Began running node model.moredemand.fct_google_ads_campaign_metrics
+[0m10:48:22.349360 [info ] [Thread-1 (]: 1 of 5 START sql table model dbt_zak.fct_google_ads_campaign_metrics ........... [RUN]
+[0m10:48:22.357370 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.moredemand.fct_google_ads_campaign_metrics'
+[0m10:48:22.361879 [debug] [Thread-1 (]: Began compiling node model.moredemand.fct_google_ads_campaign_metrics
+[0m10:48:22.393535 [debug] [Thread-1 (]: Writing injected SQL for node "model.moredemand.fct_google_ads_campaign_metrics"
+[0m10:48:22.402829 [debug] [Thread-1 (]: Began executing node model.moredemand.fct_google_ads_campaign_metrics
+[0m10:48:22.449447 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:48:23.665269 [debug] [Thread-1 (]: Writing runtime sql for node "model.moredemand.fct_google_ads_campaign_metrics"
+[0m10:48:23.665269 [debug] [Thread-1 (]: On model.moredemand.fct_google_ads_campaign_metrics: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "moredemand", "target_name": "dev", "node_id": "model.moredemand.fct_google_ads_campaign_metrics"} */
+
+  
+    
+
+    create or replace table `data-analysis-415012`.`dbt_zak`.`fct_google_ads_campaign_metrics`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+with google_ads as (
+    SELECT
+        segments_date,
+        campaign_id,
+        ROUND(SUM(metrics_impressions), 1) AS total_impressions,
+        ROUND(SUM(metrics_conversions), 1) AS total_conversions,
+        ROUND(AVG(metrics_average_cpc) / 1e6, 1) AS average_cpc,
+        ROUND(AVG(metrics_average_cpm) / 1e6, 1) AS average_cpm,
+        ROUND(SUM(metrics_cost_micros) / 1e6, 1) AS total_cost,
+        ROUND(AVG(metrics_average_cost) / 1e6, 1) AS average_cost
+    FROM
+    `data-analysis-415012`.`airbyte_google_ads`.`airbyte_campaign`
+GROUP BY 1,2 
+order by 1,2 desc)
+
+select * from google_ads
+    );
+  
+[0m10:48:24.324383 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=data-analysis-415012&j=bq:US:372eeaf0-6296-4f9a-b9cf-c69814efc395&page=queryresults
+[0m10:48:28.269917 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '108a728a-2239-42e2-9d80-bb293fe5a21e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157AC13B2F0>]}
+[0m10:48:28.269917 [info ] [Thread-1 (]: 1 of 5 OK created sql table model dbt_zak.fct_google_ads_campaign_metrics ...... [[32mCREATE TABLE (17.3k rows, 20.2 MiB processed)[0m in 5.91s]
+[0m10:48:28.279952 [debug] [Thread-1 (]: Finished running node model.moredemand.fct_google_ads_campaign_metrics
+[0m10:48:28.283045 [debug] [Thread-1 (]: Began running node model.moredemand.stg_all_campaigns_data
+[0m10:48:28.286154 [info ] [Thread-1 (]: 2 of 5 START sql table model dbt_zak.stg_all_campaigns_data .................... [RUN]
+[0m10:48:28.290954 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.moredemand.fct_google_ads_campaign_metrics, now model.moredemand.stg_all_campaigns_data)
+[0m10:48:28.290954 [debug] [Thread-1 (]: Began compiling node model.moredemand.stg_all_campaigns_data
+[0m10:48:28.320653 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:48:28.331164 [debug] [Thread-1 (]: On model.moredemand.stg_all_campaigns_data: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "moredemand", "target_name": "dev", "node_id": "model.moredemand.stg_all_campaigns_data"} */
+
+    
+select concat(table_catalog, '.', table_schema, '.', table_name) as tables
+FROM `data-analysis-415012`.non_pii.INFORMATION_SCHEMA.TABLES
+WHERE table_name LIKE 'campaign_%' and table_name NOT LIKE 'campaign_ad%' and table_name NOT LIKE 'campaign_man'
+
+  
+[0m10:48:30.371748 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=data-analysis-415012&j=bq:US:1b6f0f48-03fd-4f93-afe2-25ceb5dbdd86&page=queryresults
+[0m10:48:31.817573 [debug] [Thread-1 (]: Writing injected SQL for node "model.moredemand.stg_all_campaigns_data"
+[0m10:48:31.817573 [debug] [Thread-1 (]: Began executing node model.moredemand.stg_all_campaigns_data
+[0m10:48:32.325076 [debug] [Thread-1 (]: Writing runtime sql for node "model.moredemand.stg_all_campaigns_data"
+[0m10:48:32.340706 [debug] [Thread-1 (]: On model.moredemand.stg_all_campaigns_data: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "moredemand", "target_name": "dev", "node_id": "model.moredemand.stg_all_campaigns_data"} */
+
+  
+    
+
+    create or replace table `data-analysis-415012`.`dbt_zak`.`stg_all_campaigns_data`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+
+
+
+
+
+
+
+
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_108' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_108
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_66' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_66
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_38' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_38
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_110' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_110
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_53' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_53
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_73' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_73
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_45' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_45
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_78' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_78
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_40' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_40
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_83' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_83
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_115' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_115
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_95' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_95
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_109' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_109
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_93' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_93
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_85' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_85
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_39' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_39
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_104' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_104
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_47' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_47
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_58' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_58
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_98' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_98
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_68' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_68
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_41' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_41
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_71' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_71
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_54' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_54
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_56' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_56
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_74' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_74
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_63' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_63
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_89' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_89
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_99' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_99
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_48' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_48
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_112' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_112
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_103' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_103
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_44' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_44
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_106' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_106
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_79' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_79
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_84' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_84
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_60' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_60
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_36' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_36
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_91' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_91
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_70' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_70
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_67' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_67
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_59' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_59
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_61' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_61
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_101' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_101
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_107' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_107
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_46' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_46
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_50' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_50
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_37' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_37
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_72' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_72
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_52' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_52
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_86' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_86
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_65' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_65
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_69' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_69
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_92' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_92
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_51' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_51
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_90' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_90
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_62' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_62
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_100' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_100
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_102' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_102
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_64' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_64
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_49' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_49
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_75' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_75
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_111' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_111
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_113' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_113
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_96' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_96
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_57' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_57
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_55' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_55
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_105' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_105
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_81' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_81
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_80' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_80
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_42' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_42
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_114' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_114
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_94' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_94
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_77' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_77
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_82' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_82
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+ union all 
+
+ 
+
+SELECT 
+    SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at) AS created_at_timestamp,
+    DATE(SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', created_at)) AS created_at_date,
+    'campaign_76' as campaign_id,
+    lead_ref as id_reference,
+    buyer_id as BuyerID,
+    SAFE_CAST(regexp_replace(utm_campaign, r'[^0-9]', '') AS INT64) as utm_campaign,
+    utm_adcontent as utm_content,
+    utm_source,
+    utm_medium,
+    utm_device,
+    sale_date,
+    utm_term,
+    TRIM(LOWER(sale_status)) AS sale_status,
+    TRIM(LOWER(sale_status_reason)) AS sale_status_reason,
+    SUM(SAFE_CAST(regexp_replace(IFNULL(NULLIF(sale_value, ''), '0'), r'[^0-9]', '') AS INT64)) as sale_value
+FROM data-analysis-415012.non_pii.campaign_76
+where buyer_id != 'buyer_id'
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+
+
+
+    );
+  
+[0m10:48:33.492379 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=data-analysis-415012&j=bq:US:8243bd49-a801-4537-8eca-4b72657ed5a1&page=queryresults
+[0m10:48:42.420263 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '108a728a-2239-42e2-9d80-bb293fe5a21e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157ADB13C20>]}
+[0m10:48:42.420263 [info ] [Thread-1 (]: 2 of 5 OK created sql table model dbt_zak.stg_all_campaigns_data ............... [[32mCREATE TABLE (293.0k rows, 24.8 MiB processed)[0m in 14.13s]
+[0m10:48:42.420263 [debug] [Thread-1 (]: Finished running node model.moredemand.stg_all_campaigns_data
+[0m10:48:42.434707 [debug] [Thread-1 (]: Began running node model.moredemand.stg_campaign_ad_accounts_ad_campaigns_map
+[0m10:48:42.434707 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.moredemand.stg_all_campaigns_data, now model.moredemand.stg_campaign_ad_accounts_ad_campaigns_map)
+[0m10:48:42.434707 [debug] [Thread-1 (]: Began compiling node model.moredemand.stg_campaign_ad_accounts_ad_campaigns_map
+[0m10:48:42.443029 [debug] [Thread-1 (]: Writing injected SQL for node "model.moredemand.stg_campaign_ad_accounts_ad_campaigns_map"
+[0m10:48:42.457146 [debug] [Thread-1 (]: Finished running node model.moredemand.stg_campaign_ad_accounts_ad_campaigns_map
+[0m10:48:42.460681 [debug] [Thread-1 (]: Began running node model.moredemand.stg_campaign_ids_names
+[0m10:48:42.460681 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.moredemand.stg_campaign_ad_accounts_ad_campaigns_map, now model.moredemand.stg_campaign_ids_names)
+[0m10:48:42.460681 [debug] [Thread-1 (]: Began compiling node model.moredemand.stg_campaign_ids_names
+[0m10:48:42.476690 [debug] [Thread-1 (]: Writing injected SQL for node "model.moredemand.stg_campaign_ids_names"
+[0m10:48:42.483464 [debug] [Thread-1 (]: Finished running node model.moredemand.stg_campaign_ids_names
+[0m10:48:42.487583 [debug] [Thread-1 (]: Began running node model.moredemand.fct_leads_sales_data
+[0m10:48:42.487583 [info ] [Thread-1 (]: 3 of 5 START sql table model dbt_zak.fct_leads_sales_data ...................... [RUN]
+[0m10:48:42.487583 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.moredemand.stg_campaign_ids_names, now model.moredemand.fct_leads_sales_data)
+[0m10:48:42.487583 [debug] [Thread-1 (]: Began compiling node model.moredemand.fct_leads_sales_data
+[0m10:48:42.502388 [debug] [Thread-1 (]: Writing injected SQL for node "model.moredemand.fct_leads_sales_data"
+[0m10:48:42.509402 [debug] [Thread-1 (]: Began executing node model.moredemand.fct_leads_sales_data
+[0m10:48:42.533830 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:48:43.959965 [debug] [Thread-1 (]: Writing runtime sql for node "model.moredemand.fct_leads_sales_data"
+[0m10:48:43.959965 [debug] [Thread-1 (]: On model.moredemand.fct_leads_sales_data: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "moredemand", "target_name": "dev", "node_id": "model.moredemand.fct_leads_sales_data"} */
+
+  
+    
+
+    create or replace table `data-analysis-415012`.`dbt_zak`.`fct_leads_sales_data`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+
+SELECT 
+    created_at_date,
+    utm_campaign,
+    sale_status,
+    sale_status_reason,
+    BuyerID,
+    utm_content,
+    CASE
+    WHEN LOWER(utm_source) LIKE '%google%' THEN 'Google'
+    WHEN LOWER(utm_source) LIKE '%facebook%' THEN 'Facebook'
+    WHEN LOWER(utm_source) LIKE '%youtube%' THEN 'YouTube'
+    WHEN LOWER(utm_source) LIKE '%bing%' THEN 'Bing'
+    WHEN LOWER(utm_source) LIKE '%twitter%' THEN 'Twitter'
+    WHEN LOWER(utm_source) LIKE '%linkedin%' THEN 'LinkedIn'
+    WHEN LOWER(utm_source) LIKE '%instagram%' THEN 'Instagram'
+    WHEN LOWER(utm_source) LIKE '%email%' THEN 'Email'
+    WHEN LOWER(utm_source) LIKE '%callcentre%' THEN 'Call Centre'
+    WHEN LOWER(utm_source) LIKE '%direct%' THEN 'Direct'
+    WHEN LOWER(utm_source) LIKE '%referral%' THEN 'Referral'
+    ELSE 'Other'
+    END AS utm_source,
+    utm_medium,
+    utm_device,
+    utm_term,
+    count(sale_status) as total_leads,
+    sum(sale_value) as sale_value,
+    sum(case when sale_status = 'won' then 1 else 0 end) as number_of_sales,
+    sum(case when sale_status = 'won' then sale_value else 0 end) as total_sales,
+    sum(case when sale_status = 'won' then 1 else 0 end) as won_leads,
+    sum(case when sale_status = 'lost' then 1 else 0 end) as lost_leads,
+    sum(case when sale_status = 'quoted' then 1 else 0 end) as quoted_leads,
+    sum(case when sale_status = 'contacted' then 1 else 0 end) as contacted_leads,
+    sum(case when sale_status = 'selling' then 1 else 0 end) as selling_leads,
+    sum(case when sale_status = 'new' then 1 else 0 end) as new_leads,
+    sum(case when sale_status in ('lost', 'quoted', 'selling', 'won', 'callback') then 1 else 0 end) as qualified_leads
+FROM `data-analysis-415012`.`dbt_zak`.`stg_all_campaigns_data`
+GROUP BY 1,2,3,4,5,6,7,8,9,10
+order by 1 desc
+    );
+  
+[0m10:48:44.570127 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=data-analysis-415012&j=bq:US:52657dd6-411f-4c9f-8eae-7c00256e87c0&page=queryresults
+[0m10:48:49.191185 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '108a728a-2239-42e2-9d80-bb293fe5a21e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157ADBF1D90>]}
+[0m10:48:49.191185 [info ] [Thread-1 (]: 3 of 5 OK created sql table model dbt_zak.fct_leads_sales_data ................. [[32mCREATE TABLE (153.0k rows, 18.1 MiB processed)[0m in 6.70s]
+[0m10:48:49.206419 [debug] [Thread-1 (]: Finished running node model.moredemand.fct_leads_sales_data
+[0m10:48:49.206419 [debug] [Thread-1 (]: Began running node model.moredemand.stg_all_campaign_map
+[0m10:48:49.206419 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.moredemand.fct_leads_sales_data, now model.moredemand.stg_all_campaign_map)
+[0m10:48:49.206419 [debug] [Thread-1 (]: Began compiling node model.moredemand.stg_all_campaign_map
+[0m10:48:49.240801 [debug] [Thread-1 (]: Writing injected SQL for node "model.moredemand.stg_all_campaign_map"
+[0m10:48:49.256124 [debug] [Thread-1 (]: Finished running node model.moredemand.stg_all_campaign_map
+[0m10:48:49.256124 [debug] [Thread-1 (]: Began running node model.moredemand.dim_campaignsInformation
+[0m10:48:49.256124 [info ] [Thread-1 (]: 4 of 5 START sql table model dbt_zak.dim_campaignsInformation .................. [RUN]
+[0m10:48:49.256124 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.moredemand.stg_all_campaign_map, now model.moredemand.dim_campaignsInformation)
+[0m10:48:49.264644 [debug] [Thread-1 (]: Began compiling node model.moredemand.dim_campaignsInformation
+[0m10:48:49.286944 [debug] [Thread-1 (]: Writing injected SQL for node "model.moredemand.dim_campaignsInformation"
+[0m10:48:49.286944 [debug] [Thread-1 (]: Began executing node model.moredemand.dim_campaignsInformation
+[0m10:48:49.295959 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:48:50.705074 [debug] [Thread-1 (]: Writing runtime sql for node "model.moredemand.dim_campaignsInformation"
+[0m10:48:50.706591 [debug] [Thread-1 (]: On model.moredemand.dim_campaignsInformation: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "moredemand", "target_name": "dev", "node_id": "model.moredemand.dim_campaignsInformation"} */
+
+  
+    
+
+    create or replace table `data-analysis-415012`.`dbt_zak`.`dim_campaignsInformation`
+      
+    
+    
+
+    OPTIONS()
+    as (
+       
+
+WITH  __dbt__cte__stg_campaign_ad_accounts_ad_campaigns_map as (
+ 
+
+WITH campaign_map AS (
+  SELECT distinct 
+  campaign_id, 
+  ad_account_id, 
+  ad_campaign_id
+  FROM `data-analysis-415012`.`non_pii`.`campaign_ad_accounts_ad_campaigns_map`
+)
+SELECT * FROM campaign_map
+),  __dbt__cte__stg_campaign_ids_names as (
+ 
+
+WITH campaign_names AS (
+  SELECT distinct campaign_id, campaign_name
+  FROM  `data-analysis-415012`.`non_pii`.`campaign_man`
+)
+SELECT * FROM campaign_names 
+where campaign_id != 'campaign_id'
+), campaign_ids AS (
+  SELECT
+    *
+  FROM
+    __dbt__cte__stg_campaign_ad_accounts_ad_campaigns_map
+),
+campaign_details AS (
+  SELECT
+    *
+  FROM
+    __dbt__cte__stg_campaign_ids_names
+)
+select a.*, b.* except (campaign_id) 
+from campaign_ids a
+left join campaign_details b 
+on a.campaign_id = b.campaign_id
+    );
+  
+[0m10:48:51.400192 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=data-analysis-415012&j=bq:US:dfefb383-cfa3-4401-a2e2-abdb37eaa758&page=queryresults
+[0m10:48:54.546341 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '108a728a-2239-42e2-9d80-bb293fe5a21e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157A8121250>]}
+[0m10:48:54.546341 [info ] [Thread-1 (]: 4 of 5 OK created sql table model dbt_zak.dim_campaignsInformation ............. [[32mCREATE TABLE (121.0 rows, 7.0 KiB processed)[0m in 5.29s]
+[0m10:48:54.546341 [debug] [Thread-1 (]: Finished running node model.moredemand.dim_campaignsInformation
+[0m10:48:54.546341 [debug] [Thread-1 (]: Began running node model.moredemand.sales_performance_overview_by_date
+[0m10:48:54.546341 [info ] [Thread-1 (]: 5 of 5 START sql table model dbt_zak.sales_performance_overview_by_date ........ [RUN]
+[0m10:48:54.563027 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.moredemand.dim_campaignsInformation, now model.moredemand.sales_performance_overview_by_date)
+[0m10:48:54.563027 [debug] [Thread-1 (]: Began compiling node model.moredemand.sales_performance_overview_by_date
+[0m10:48:54.571716 [debug] [Thread-1 (]: Writing injected SQL for node "model.moredemand.sales_performance_overview_by_date"
+[0m10:48:54.583954 [debug] [Thread-1 (]: Began executing node model.moredemand.sales_performance_overview_by_date
+[0m10:48:54.583954 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:48:55.888146 [debug] [Thread-1 (]: Writing runtime sql for node "model.moredemand.sales_performance_overview_by_date"
+[0m10:48:55.888146 [debug] [Thread-1 (]: On model.moredemand.sales_performance_overview_by_date: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "moredemand", "target_name": "dev", "node_id": "model.moredemand.sales_performance_overview_by_date"} */
+
+  
+    
+
+    create or replace table `data-analysis-415012`.`dbt_zak`.`sales_performance_overview_by_date`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT
+  a.*,
+  b.* EXCEPT(campaign_id,
+    segments_date)
+FROM
+  `data-analysis-415012`.`dbt_zak`.`fct_leads_sales_data` a
+LEFT JOIN (
+  SELECT
+    *
+  FROM
+    `data-analysis-415012`.`dbt_zak`.`fct_google_ads_campaign_metrics` ) b
+ON
+  a.utm_campaign = b.campaign_id
+  AND a.created_at_date = b.segments_date
+    );
+  
+[0m10:48:56.502508 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=data-analysis-415012&j=bq:US:e1091863-18b1-4e5c-b9b5-e3ef13e5e59d&page=queryresults
+[0m10:49:00.759194 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '108a728a-2239-42e2-9d80-bb293fe5a21e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157ADBF9790>]}
+[0m10:49:00.759194 [info ] [Thread-1 (]: 5 of 5 OK created sql table model dbt_zak.sales_performance_overview_by_date ... [[32mCREATE TABLE (153.0k rows, 23.7 MiB processed)[0m in 6.20s]
+[0m10:49:00.759194 [debug] [Thread-1 (]: Finished running node model.moredemand.sales_performance_overview_by_date
+[0m10:49:00.775602 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:49:00.776848 [debug] [MainThread]: Connection 'list_data-analysis-415012' was properly closed.
+[0m10:49:00.776848 [debug] [MainThread]: Connection 'list_data-analysis-415012_dbt_zak' was properly closed.
+[0m10:49:00.776848 [debug] [MainThread]: Connection 'model.moredemand.sales_performance_overview_by_date' was properly closed.
+[0m10:49:00.776848 [info ] [MainThread]: 
+[0m10:49:00.784342 [info ] [MainThread]: Finished running 5 table models in 0 hours 0 minutes and 41.69 seconds (41.69s).
+[0m10:49:00.785585 [debug] [MainThread]: Command end result
+[0m10:49:01.044210 [info ] [MainThread]: 
+[0m10:49:01.044210 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:49:01.044210 [info ] [MainThread]: 
+[0m10:49:01.059828 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m10:49:01.064101 [debug] [MainThread]: Command `dbt run` succeeded at 10:49:01.064101 after 45.13 seconds
+[0m10:49:01.069025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157A90E7C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157A9818290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157AB930530>]}
+[0m10:49:01.069025 [debug] [MainThread]: Flushing usage events

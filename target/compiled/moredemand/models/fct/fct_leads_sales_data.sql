@@ -24,6 +24,7 @@ SELECT
     END AS utm_source,
     utm_medium,
     utm_device,
+    utm_term,
     count(sale_status) as total_leads,
     sum(sale_value) as sale_value,
     sum(case when sale_status = 'won' then 1 else 0 end) as number_of_sales,
@@ -36,5 +37,5 @@ SELECT
     sum(case when sale_status = 'new' then 1 else 0 end) as new_leads,
     sum(case when sale_status in ('lost', 'quoted', 'selling', 'won', 'callback') then 1 else 0 end) as qualified_leads
 FROM `data-analysis-415012`.`dbt_zak`.`stg_all_campaigns_data`
-GROUP BY 1,2,3,4,5,6,7,8,9
+GROUP BY 1,2,3,4,5,6,7,8,9,10
 order by 1 desc
